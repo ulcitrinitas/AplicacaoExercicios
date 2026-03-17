@@ -21,7 +21,17 @@ class _SomarScreenState extends State<SomarScreen> {
     final double? n2 = double.tryParse(_ctrl2.text);
     final double? n3 = double.tryParse(_ctrl3.text);
 
-    // Se algum campo estiver vazio ou inválido, mostramos um aviso
+
+    // verifica se há pelo menos dois campos preenchidos
+
+    if (n1 == null || n2 == null) {
+      setState(() {
+        _resultado = 'Preencha ao menos dois campos com números válidos.';
+      });
+      return; // interrompe a função aqui
+    }
+
+    // Se os campos não estiverem preenchidos considera eles como 0
 
     double num1 = n1 ?? 0;
     double num2 = n2 ?? 0;
