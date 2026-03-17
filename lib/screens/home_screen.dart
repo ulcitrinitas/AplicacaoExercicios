@@ -12,20 +12,31 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("Lista de Exercícios"),
         backgroundColor: const Color(0xFF543FCA),
-        foregroundColor: Colors.white,
+        foregroundColor: const Color(0xFFE6E1EE),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(12),
+        padding: const EdgeInsets.all(50),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             const Text(
               "Escolha um exercício",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.normal),
+              style: TextStyle(fontSize: 25, fontWeight: FontWeight.normal),
             ),
             const SizedBox(height: 24),
-            ElevatedButton.icon(onPressed: (){}, label: Text("Label")),
-            ],
+            ElevatedButton.icon(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const MaiorNumScreen(),
+                  ),
+                );
+              },
+              icon: const Icon(Icons.looks_one_outlined),
+              label: Text("Maior número"),
+            ),
+          ],
         ),
       ),
     );
