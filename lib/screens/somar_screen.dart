@@ -50,7 +50,7 @@ class _SomarScreenState extends State<SomarScreen> {
   return Scaffold(
       appBar: AppBar(
         title: const Text('Exercício C — Somar Números'),
-        backgroundColor: const Color(0xFF48D39E),
+        backgroundColor: const Color(0xFF6D48D3),
         foregroundColor: const Color(0xFF080808),
       ),
       body: SingleChildScrollView(
@@ -103,7 +103,7 @@ class _SomarScreenState extends State<SomarScreen> {
               onPressed: _calcular,
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 16),
-                backgroundColor: const Color(0xFF48D39E),
+                backgroundColor: const Color(0xFF8448D3),
                 foregroundColor: const Color(0xFF080808),
               ),
               child: const Text('Calcular', style: TextStyle(fontSize: 16)),

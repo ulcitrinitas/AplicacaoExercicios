@@ -74,7 +74,7 @@ class HomeScreen extends StatelessWidget {
               label: Text("Somar"),
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 20),
-                backgroundColor: Color(0xFF1BEEB9),
+                backgroundColor:  Color(0xFF8448D3),
                 foregroundColor: Colors.black,
               ),
             ),
