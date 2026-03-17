@@ -51,7 +51,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 );
               },
-              icon: const Icon(Icons.looks_one_outlined),
+              icon: const Icon(Icons.currency_exchange),
               label: Text("Conversor"),
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 20),
