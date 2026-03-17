@@ -71,7 +71,7 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               icon: const Icon(Icons.numbers),
-              label: Text("Soma"),
+              label: Text("Somar"),
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 20),
                 backgroundColor: Color(0xFF1BEEB9),
