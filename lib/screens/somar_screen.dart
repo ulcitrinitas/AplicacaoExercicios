@@ -39,9 +39,9 @@ class _SomarScreenState extends State<SomarScreen> {
   Widget build(BuildContext context) {
   return Scaffold(
       appBar: AppBar(
-        title: const Text('Exercício A — Maior Número'),
-        backgroundColor: Colors.indigo,
-        foregroundColor: Colors.white,
+        title: const Text('Exercício C — Somar Números'),
+        backgroundColor: const Color(0xFF48D39E),
+        foregroundColor: const Color(0xFF080808),
       ),
       body: SingleChildScrollView(
         // SingleChildScrollView evita overflow em telas pequenas
@@ -93,8 +93,8 @@ class _SomarScreenState extends State<SomarScreen> {
               onPressed: _calcular,
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 16),
-                backgroundColor: Colors.indigo,
-                foregroundColor: Colors.white,
+                backgroundColor: const Color(0xFF48D39E),
+                foregroundColor: const Color(0xFF080808),
               ),
               child: const Text('Calcular', style: TextStyle(fontSize: 16)),
             ),
