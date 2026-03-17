@@ -59,6 +59,24 @@ class HomeScreen extends StatelessWidget {
                 foregroundColor: Colors.black,
               ),
             ),
+            const SizedBox(height: 24),
+            ElevatedButton.icon(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ConversorScreen(),
+                  ),
+                );
+              },
+              icon: const Icon(Icons.numbers),
+              label: Text("Soma"),
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(vertical: 20),
+                backgroundColor: Color(0xFF1BEEB9),
+                foregroundColor: Colors.black,
+              ),
+            ),
           ],
         ),
       ),
