@@ -29,16 +29,16 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const MaiorNumScreen(),
+                    builder: (context) => const MaiorNumeroScreen(),
                   ),
                 );
               },
               icon: const Icon(Icons.looks_one_outlined),
-              label: Text("Conversor"),
+              label: Text("Maior Número"),
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 20),
                 backgroundColor: Color(0xFFEEB91B),
-                foregroundColor: Colors.black
+                foregroundColor: Colors.black,
               ),
             ),
             const SizedBox(height: 24),
@@ -52,11 +52,11 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               icon: const Icon(Icons.looks_one_outlined),
-              label: Text("Maior número"),
+              label: Text("Conversor"),
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 20),
                 backgroundColor: Color(0xFF1BEEB9),
-                foregroundColor: Colors.black
+                foregroundColor: Colors.black,
               ),
             ),
           ],
