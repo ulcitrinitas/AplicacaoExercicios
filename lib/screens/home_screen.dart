@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_1703/screens/somar_screen.dart';
 
 import 'conversor_screen.dart';
 import 'maior_num_screen.dart';
@@ -65,7 +66,7 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const ConversorScreen(),
+                    builder: (context) => const SomarScreen(),
                   ),
                 );
               },
